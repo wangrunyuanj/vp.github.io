@@ -21,6 +21,7 @@ module.exports = (options, ctx) => {
   const sidebar = themeConfig.sidebar
   if (sidebar === 'structuring' || sidebar && sidebar.mode === 'structuring') {
     const collapsable = themeConfig.sidebar.collapsable === false ? false : true
+    log('-------------在此处之前完成文件下载')
     const sidebarData = getSidebarData(sourceDir, collapsable)
     if (sidebarData) {
       themeConfig.sidebar = sidebarData

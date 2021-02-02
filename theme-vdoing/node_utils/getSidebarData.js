@@ -12,6 +12,7 @@ let catalogueData = {}; // 目录页数据
  * @param {Boolean} collapsable  是否可折叠
  */
 function createSidebarData (sourceDir, collapsable) {
+  console.log('-----------sourceDir: ' + sourceDir + '   collapsable: ' + collapsable)
   const sidebarData = {};
   const tocs = readTocs(sourceDir);
   tocs.forEach(toc => { // toc是每个目录的绝对路径
