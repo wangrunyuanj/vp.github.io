@@ -2,7 +2,11 @@
 module.exports = [
   { text: '首页', link: '/' },
   {
-    text: 'demo',
+    text: 'Swaggewr Api',
+    link: '/pages/273219/'
+  },
+  {
+    text: '接口文档',
     link: '/pages/273213/'
   },
   {

@@ -28,6 +28,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "request": "^2.88.2",
+    "urllib-sync": "^1.1.4",
     "vuepress-plugin-comment": "^0.7.3"
   }
 }

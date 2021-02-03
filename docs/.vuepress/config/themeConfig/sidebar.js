@@ -9,6 +9,12 @@ module.exports = {
       collapsable: false
     }
   ],
+  '/500.Swagger Api文档/': [
+      {
+        title: 'Api',
+        collapsable: false
+      }
+  ]
   // '/': [ // 在最后定义，在没有单独设置侧边栏时统一使用这个侧边栏
   //   '',
   //   'git',
@@ -16,6 +22,7 @@ module.exports = {
   //   'markdown',
   //   'study',
   //   'interview'
+  
   //   // '/',
   //   // {
   //   //   title: 'foo', // 标题，必要的

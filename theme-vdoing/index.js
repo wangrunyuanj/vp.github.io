@@ -22,7 +22,6 @@ module.exports = (options, ctx) => {
   if (sidebar === 'structuring' || sidebar && sidebar.mode === 'structuring') {
     const collapsable = themeConfig.sidebar.collapsable === false ? false : true
     const sidebarData = getSidebarData(sourceDir, collapsable)
-    log('-------------在此处之前完成文件下载')
     if (sidebarData) {
       themeConfig.sidebar = sidebarData
       log(chalk.blue('tip ') + chalk.green('add sidebar data. 侧边栏数据成功生成。'))
@@ -36,28 +35,22 @@ module.exports = (options, ctx) => {
 
   // 分类页
   if (themeConfig.category !== false) {
-    console.log('----------------sourceDir: ' + sourceDir + '  , ' +  'categoriesPage')
     createPage(sourceDir, 'categoriesPage')
   } else {
-    console.log('----------------sourceDir: ' + sourceDir + '  , ' +  'categoriesPage')
     deletePage(sourceDir, 'categoriesPage')
   }
 
   // 标签页
   if (themeConfig.tag !== false) {
-    console.log('----------------sourceDir: ' + sourceDir + '  , ' +  'tagsPage')
     createPage(sourceDir, 'tagsPage')
   } else {
-    console.log('----------------sourceDir: ' + sourceDir + '  , ' +  'tagsPage')
     deletePage(sourceDir, 'tagsPage')
   }
 
   // 归档页
   if (themeConfig.archive !== false) {
-    console.log('----------------sourceDir: ' + sourceDir + '  , ' +  'archivesPage')
     createPage(sourceDir, 'archivesPage')
   } else {
-    console.log('----------------sourceDir: ' + sourceDir + '  , ' +  'archivesPage')
     deletePage(sourceDir, 'archivesPage')
   }
 
